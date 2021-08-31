@@ -1,0 +1,337 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+ 
+# GNU Make 4.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Aug 21 17:48:40 2021
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# environment
+VSCODE_AGENT_FOLDER = /root/.vscode-server
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 6)
+cu_srcs := src/5_warpaffine.cu src/7_question.cu src/4_hello_stream_event_async.cu src/3_hello_cuda.cu src/6_yolo5decode.cu
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /datav/shared/100_du/5Q_06.19_cuda_additional
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"7e2798734d22b5386c06852fa8a7c560.zh-cn","_translationsConfigFile":"/root/.vscode-server/data/clp/7e2798734d22b5386c06852fa8a7c560.zh-cn/tcf.json","_cacheRoot":"/root/.vscode-server/data/clp/7e2798734d22b5386c06852fa8a7c560.zh-cn","_resolvedLanguagePackCoreLocation":"/root/.vscode-server/data/clp/7e2798734d22b5386c06852fa8a7c560.zh-cn/379476f0e13988d90fab105c5c19e7abc8b1dea8","_corruptedFile":"/root/.vscode-server/data/clp/7e2798734d22b5386c06852fa8a7c560.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /root/.vscode-server/bin/379476f0e13988d90fab105c5c19e7abc8b1dea8/node
+# environment
+WALLABY_PRODUCTION = true
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from 'Makefile', line 24)
+library_paths := -L/datav/lean/opencv4.2.0/lib -L/usr/local/cuda/lib64
+# 'override' directive
+GNUMAKEFLAGS := 
+# makefile (from 'Makefile', line 2)
+cpp_srcs := src/xt_cuda.cpp src/1_hello_driver_api.cpp src/2_hello_runtime_api.cpp src/main.cpp
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from 'Makefile', line 33)
+link_flags := -pthread -fopenmp -L/datav/lean/opencv4.2.0/lib -L/usr/local/cuda/lib64 -lopencv_core -lopencv_imgproc -lopencv_videoio -lopencv_imgcodecs -lcuda -lcurand -lcublas -lcudart -lstdc++ -ldl -Wl,-rpath=/datav/lean/opencv4.2.0/lib -Wl,-rpath=/usr/local/cuda/lib64
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /root
+# environment
+SSH_CONNECTION = 172.17.0.1 39998 172.17.0.2 22
+# environment
+PATH = /root/.vscode-server/bin/379476f0e13988d90fab105c5c19e7abc8b1dea8/bin:/usr/local/cuda-10.0/bin:/opt/STM/STLinux-2.3/devkit/sh4/bin:/root/.vscode-server/bin/379476f0e13988d90fab105c5c19e7abc8b1dea8/bin:/usr/local/cuda-10.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/NVIDIA-Nsight-Compute-2019.4/target/linux-desktop-glibc_2_11_3-x64/:/root/anaconda3/bin:/root/.local/bin:/usr/local/NVIDIA-Nsight-Compute-2019.4/target/linux-desktop-glibc_2_11_3-x64/:/root/anaconda3/bin:/root/.local/bin:/bin
+# makefile (from 'Makefile', line 22)
+run_paths := -Wl,-rpath=/datav/lean/opencv4.2.0/lib -Wl,-rpath=/usr/local/cuda/lib64
+# environment
+VSCODE_LOG_STACK = false
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = 
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /datav/shared/100_du/5Q_06.19_cuda_additional
+# environment
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-ea9a15d5-b515-42cb-9b11-f0e865593896.sock
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PKG_CONFIG_PATH = /usr/local/opencv4/lib/pkgconfig::/usr/loca/opencv4/lib/pkgconfig
+# makefile (from 'Makefile', line 8)
+cu_objs := objs/5_warpaffine.cuo objs/7_question.cuo objs/4_hello_stream_event_async.cuo objs/3_hello_cuda.cuo objs/6_yolo5decode.cuo
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/server/remoteExtensionHostProcess
+# environment
+HOME = /root
+# environment
+LD_LIBRARY_PATH = /usr/local/cuda-10.0/lib64:/usr/local/cuda-10.0/lib64::usr/local/TensorRT-6.0.1.5/lib:usr/local/TensorRT-6.0.1.5/lib
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+LOGNAME = root
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# makefile (from 'Makefile', line 32)
+cu_compile_flags := -std=c++11 -m64 -Xcompiler -fPIC -g -w -gencode=arch=compute_75,code=sm_75 -O0 -Isrc -I/datav/lean/opencv4.2.0/include/opencv4 -I/usr/local/cuda/include
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 3
+# makefile (from 'Makefile', line 4)
+cpp_objs := objs/xt_cuda.o objs/1_hello_driver_api.o objs/2_hello_runtime_api.o objs/main.o
+# default
+MAKE_VERSION := 4.1
+# environment
+USER = root
+# makefile
+.DEFAULT_GOAL := pro
+# makefile (from 'Makefile', line 31)
+cpp_compile_flags := -std=c++11 -fPIC -m64 -g -fopenmp -w -O0 -Isrc -I/datav/lean/opencv4.2.0/include/opencv4 -I/usr/local/cuda/include
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+CONDA_SHLVL = 0
+# default
+MAKE_COMMAND := make
+# makefile (from 'Makefile', line 10)
+lean := /datav/lean
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+PYTHONPATH = /datav/shared/19_pzy/tensorflow/models/research/slim:/datav/shared/19_pzy/tensorflow/models/research:/datav/shared/19_pzy/tensorflow/models:
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_CLIENT = 172.17.0.1 39998 22
+# environment
+MAIL = /var/mail/root
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+BROWSER = /root/.vscode-server/bin/379476f0e13988d90fab105c5c19e7abc8b1dea8/bin/helpers/browser.sh
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+PHANTOMJS_PLATFORM = linux
+# makefile (from 'Makefile', line 25)
+link_librarys := -lopencv_core -lopencv_imgproc -lopencv_videoio -lopencv_imgcodecs -lcuda -lcurand -lcublas -lcudart -lstdc++ -ldl
+# environment
+PHANTOMJS_ARCH = x64
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/include
+# environment
+VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH = /root/.vscode-server/bin/379476f0e13988d90fab105c5c19e7abc8b1dea8/remote/node_modules
+# makefile (from 'Makefile', line 23)
+include_paths := -Isrc -I/datav/lean/opencv4.2.0/include/opencv4 -I/usr/local/cuda/include
+# default
+.RECIPEPREFIX := 
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+LANG = C
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# variable set hash-table stats:
+# Load=82/1024=8%, Rehash=0, Collisions=10/139=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 64769, inode 9937563): 10 files, no impossibilities.
+# src (device 64769, inode 9937564): No files, no impossibilities so far.
+
+# 10 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+objs/%.o: src/%.cpp
+#  recipe to execute (from 'Makefile', line 46):
+	@echo Compile CXX $<
+	@mkdir -p $(dir $@)
+	@g++ -c $< -o $@ $(cpp_compile_flags)
+
+objs/%.cuo: src/%.cu
+#  recipe to execute (from 'Makefile', line 51):
+	@echo Compile CUDA $<
+	@mkdir -p $(dir $@)
+	@nvcc -c $< -o $@ $(cu_compile_flags)
+
+# 2 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+workspace/pro: objs/xt_cuda.o objs/1_hello_driver_api.o objs/2_hello_runtime_api.o objs/main.o objs/5_warpaffine.cuo objs/7_question.cuo objs/4_hello_stream_event_async.cuo objs/3_hello_cuda.cuo objs/6_yolo5decode.cuo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 41):
+	@echo Link $@
+	@mkdir -p $(dir $@)
+	@g++ $^ -o $@ $(link_flags)
+
+# Not a target:
+objs/3_hello_cuda.cuo:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+objs/1_hello_driver_api.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-21 16:57:28.852610794
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+objs/4_hello_stream_event_async.cuo:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+debug:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 59):
+	@echo $(includes)
+
+# Not a target:
+objs/6_yolo5decode.cuo:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pro: workspace/pro
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/7_question.cuo:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+run: workspace/pro
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 56):
+	@cd workspace && ./pro
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 62):
+	@rm -rf objs workspace/pro
+
+# Not a target:
+objs/xt_cuda.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/2_hello_runtime_api.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/5_warpaffine.cuo:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=18/1024=2%, Rehash=0, Collisions=1/40=2%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 32 / storage = 375 B / avg = 11 B
+# current buf: size = 8162 B / used = 375 B / count = 32 / avg = 11 B
+
+# strcache performance: lookups = 44 / hit rate = 27%
+# hash-table stats:
+# Load=32/8192=0%, Rehash=0, Collisions=1/44=2%
+# Finished Make data base on Sat Aug 21 17:48:40 2021
+
+ 

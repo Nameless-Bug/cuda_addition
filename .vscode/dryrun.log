@@ -1,0 +1,34 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/datav/shared/100_du/5Q_06.19_cuda_additional'
+echo Compile CXX src/xt_cuda.cpp
+mkdir -p objs/
+g++ -c src/xt_cuda.cpp -o objs/xt_cuda.o -std=c++11 -fPIC -m64 -g -fopenmp -w -O0 -Isrc -I/datav/lean/opencv4.2.0/include/opencv4 -I/usr/local/cuda/include
+echo Compile CXX src/1_hello_driver_api.cpp
+mkdir -p objs/
+g++ -c src/1_hello_driver_api.cpp -o objs/1_hello_driver_api.o -std=c++11 -fPIC -m64 -g -fopenmp -w -O0 -Isrc -I/datav/lean/opencv4.2.0/include/opencv4 -I/usr/local/cuda/include
+echo Compile CXX src/2_hello_runtime_api.cpp
+mkdir -p objs/
+g++ -c src/2_hello_runtime_api.cpp -o objs/2_hello_runtime_api.o -std=c++11 -fPIC -m64 -g -fopenmp -w -O0 -Isrc -I/datav/lean/opencv4.2.0/include/opencv4 -I/usr/local/cuda/include
+echo Compile CXX src/main.cpp
+mkdir -p objs/
+g++ -c src/main.cpp -o objs/main.o -std=c++11 -fPIC -m64 -g -fopenmp -w -O0 -Isrc -I/datav/lean/opencv4.2.0/include/opencv4 -I/usr/local/cuda/include
+echo Compile CUDA src/5_warpaffine.cu
+mkdir -p objs/
+nvcc -c src/5_warpaffine.cu -o objs/5_warpaffine.cuo -std=c++11 -m64 -Xcompiler -fPIC -g -w -gencode=arch=compute_75,code=sm_75 -O0 -Isrc -I/datav/lean/opencv4.2.0/include/opencv4 -I/usr/local/cuda/include
+echo Compile CUDA src/7_question.cu
+mkdir -p objs/
+nvcc -c src/7_question.cu -o objs/7_question.cuo -std=c++11 -m64 -Xcompiler -fPIC -g -w -gencode=arch=compute_75,code=sm_75 -O0 -Isrc -I/datav/lean/opencv4.2.0/include/opencv4 -I/usr/local/cuda/include
+echo Compile CUDA src/4_hello_stream_event_async.cu
+mkdir -p objs/
+nvcc -c src/4_hello_stream_event_async.cu -o objs/4_hello_stream_event_async.cuo -std=c++11 -m64 -Xcompiler -fPIC -g -w -gencode=arch=compute_75,code=sm_75 -O0 -Isrc -I/datav/lean/opencv4.2.0/include/opencv4 -I/usr/local/cuda/include
+echo Compile CUDA src/3_hello_cuda.cu
+mkdir -p objs/
+nvcc -c src/3_hello_cuda.cu -o objs/3_hello_cuda.cuo -std=c++11 -m64 -Xcompiler -fPIC -g -w -gencode=arch=compute_75,code=sm_75 -O0 -Isrc -I/datav/lean/opencv4.2.0/include/opencv4 -I/usr/local/cuda/include
+echo Compile CUDA src/6_yolo5decode.cu
+mkdir -p objs/
+nvcc -c src/6_yolo5decode.cu -o objs/6_yolo5decode.cuo -std=c++11 -m64 -Xcompiler -fPIC -g -w -gencode=arch=compute_75,code=sm_75 -O0 -Isrc -I/datav/lean/opencv4.2.0/include/opencv4 -I/usr/local/cuda/include
+echo Link workspace/pro
+mkdir -p workspace/
+g++ objs/xt_cuda.o objs/1_hello_driver_api.o objs/2_hello_runtime_api.o objs/main.o objs/5_warpaffine.cuo objs/7_question.cuo objs/4_hello_stream_event_async.cuo objs/3_hello_cuda.cuo objs/6_yolo5decode.cuo -o workspace/pro -pthread -fopenmp -L/datav/lean/opencv4.2.0/lib -L/usr/local/cuda/lib64 -lopencv_core -lopencv_imgproc -lopencv_videoio -lopencv_imgcodecs -lcuda -lcurand -lcublas -lcudart -lstdc++ -ldl -Wl,-rpath=/datav/lean/opencv4.2.0/lib -Wl,-rpath=/usr/local/cuda/lib64
+make: Leaving directory '/datav/shared/100_du/5Q_06.19_cuda_additional'
+ 
